@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo-mfs-home</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-3">
+                
+                <!-- amount balance start-->
+                <div class="stats shadow">
+                    <div class="stat">
+                      <div class="stat-title">Amount Balance</div>
+                      <div id="current-balance" class="stat-value">9400</div>
+                    </div>
+                  </div>
+                  <div class="divider"></div>
+                <!-- amount balance end -->
+
+                <!-- add money start -->
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Add Amount</span>
+                        </label>
+                        <input id="input-amount" type="text" placeholder="Type your amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin Number</span>
+                        </label>
+                        <input id="input-pin" type="password" placeholder="Type your pin Number" class="input input-bordered" required />
+                        <label class="label">
+                        </label>
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="add-amount-btn" class="btn btn-primary">Add amount</button>
+                      </div>
+                    </form>
+                  </div>
+                <!-- add money end -->
+
+              </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/addAmount.js"></script>
+</body>
+</html>
